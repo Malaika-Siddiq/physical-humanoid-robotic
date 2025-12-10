@@ -1,55 +1,79 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- Sync Impact Report:
+Version change: N/A → 1.0.0
+Modified principles: N/A (new constitution)
+Added sections: All sections
+Removed sections: None
+Templates requiring updates: ⚠ pending - .specify/templates/plan-template.md, .specify/templates/spec-template.md, .specify/templates/tasks-template.md
+Follow-up TODOs: None
+-->
+# Physical AI & Humanoid Robotics Textbook Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. AI-Spec-Driven Development
+Every feature and content piece starts with a clear specification; All content must be designed with AI integration in mind; Each section must be structured to support RAG (Retrieval-Augmented Generation) capabilities and AI understanding.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Multi-Modal Accessibility
+All content must be accessible in multiple formats; Textbook supports both English and Urdu languages; Content is structured for both human learning and AI processing; Personalization features must be optional but available for different learning styles.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Test-First Content Creation (NON-NEGOTIABLE)
+All educational content follows a test-first approach: Learning objectives defined → Assessment questions created → Content developed to meet objectives; Each section must include verification mechanisms; Red-Green-Refactor cycle applies to content quality.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Modular and Scalable Architecture
+Content must be organized in modular, interconnected units; Each module should stand alone while contributing to the larger educational framework; Docusaurus-based structure ensures scalability and maintainability; Content updates should not break existing learning paths.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Interactive Learning Experience
+All content must incorporate interactive elements; RAG chatbot integration required for real-time Q&A; Personalization features to adapt to individual learning pace and style; Practical examples and hands-on exercises integrated throughout.
 
-### [PRINCIPLE_6_NAME]
+### VI. Technical Excellence and Documentation
+All code examples and technical explanations must be accurate and well-documented; Best practices for Physical AI and Humanoid Robotics implementation clearly articulated; Standards and protocols for humanoid robotics development included.
 
+## Project Scope and Requirements
 
-[PRINCIPLE__DESCRIPTION]
+### Target Audience
+- Primary: University students in AI, Robotics, and Computer Science programs
+- Secondary: Educators developing robotics curricula
+- Tertiary: AI enthusiasts and professionals transitioning to physical AI
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+### Core Features
+- AI-powered RAG chatbot for real-time assistance
+- Optional user personalization for adaptive learning
+- Urdu translation for broader accessibility
+- Docusaurus-based documentation system
+- Integration with Claude Code and Spec-Kit Plus for AI-driven content development
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### Technology Stack
+- Docusaurus for documentation framework
+- Claude Code for AI-assisted development
+- Spec-Kit Plus for specification-driven approach
+- Vector databases for RAG implementation
+- Translation APIs for Urdu localization
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## Development Workflow and Quality Standards
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### Content Creation Process
+- All content must begin with a clear learning objective specification
+- Technical accuracy verified by domain experts
+- Code examples tested and validated
+- Accessibility standards maintained for all content
+- Multi-language support implemented from the start
+
+### Review and Validation
+- Peer review required for all technical content
+- Educational effectiveness testing with target audience
+- AI integration testing for chatbot functionality
+- Accessibility compliance verification
+- Performance testing for RAG system
+
+### Quality Gates
+- All content must pass educational effectiveness tests
+- Technical examples must be executable and produce expected results
+- Localization must be accurate and culturally appropriate
+- AI features must meet minimum performance benchmarks
+- Accessibility requirements must be satisfied
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution governs all development and content creation for the Physical AI & Humanoid Robotics textbook project. All contributions must align with these principles. Amendments require documentation of the change, approval from project maintainers, and a migration plan for existing content. All pull requests and reviews must verify compliance with these principles. Complexity must be justified with clear educational or technical benefits. Use this constitution as the primary guidance for all development decisions.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-09 | **Last Amended**: 2025-12-09

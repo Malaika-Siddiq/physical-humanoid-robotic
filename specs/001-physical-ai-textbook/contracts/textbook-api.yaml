@@ -1,0 +1,220 @@
+# Textbook API Contract
+
+## Overview
+This document defines the API contracts for the Physical AI & Humanoid Robotics Textbook platform.
+
+## Base URL
+```
+https://api.textbook-physical-ai.com/v1
+```
+
+## Authentication
+All API requests require authentication via Bearer token in the Authorization header:
+```
+Authorization: Bearer {access_token}
+```
+
+## Endpoints
+
+### User Profile Management
+
+#### GET /users/profile
+Retrieve the current user's profile information.
+
+**Response (200 OK):**
+```json
+{
+  "userId": "string",
+  "preferences": {
+    "language": "string",
+    "learningStyle": "string",
+    "accessibilityNeeds": ["string"]
+  },
+  "progress": {
+    "completedChapters": ["string"],
+    "completedAssessments": ["string"],
+    "currentChapter": "string"
+  },
+  "achievements": [
+    {
+      "id": "string",
+      "name": "string",
+      "description": "string",
+      "earnedAt": "string"
+    }
+  ]
+}
+```
+
+#### PUT /users/profile
+Update the current user's profile information.
+
+**Request:**
+```json
+{
+  "preferences": {
+    "language": "string",
+    "learningStyle": "string",
+    "accessibilityNeeds": ["string"]
+  }
+}
+```
+
+**Response (200 OK):**
+```json
+{
+  "message": "Profile updated successfully"
+}
+```
+
+### Textbook Content
+
+#### GET /chapters
+Retrieve a list of available chapters.
+
+**Response (200 OK):**
+```json
+{
+  "chapters": [
+    {
+      "chapterId": "string",
+      "title": "string",
+      "description": "string",
+      "level": "beginner|intermediate",
+      "prerequisites": ["string"],
+      "handsOnExamples": ["string"],
+      "assessments": ["string"],
+      "progress": {
+        "completed": "boolean",
+        "progressPercentage": "number"
+      }
+    }
+  ]
+}
+```
+
+#### GET /chapters/{chapterId}
+Retrieve a specific chapter's content.
+
+**Response (200 OK):**
+```json
+{
+  "chapterId": "string",
+  "title": "string",
+  "content": "string",
+  "language": "string",
+  "level": "beginner|intermediate",
+  "prerequisites": ["string"],
+  "handsOnExamples": [
+    {
+      "exampleId": "string",
+      "title": "string",
+      "description": "string",
+      "code": "string",
+      "expectedOutcome": "string"
+    }
+  ],
+  "assessments": ["string"]
+}
+```
+
+### AI Assistant
+
+#### POST /ai/chat
+Get a response from the AI assistant based on textbook content.
+
+**Request:**
+```json
+{
+  "message": "string",
+  "context": {
+    "chapterId": "string",
+    "section": "string"
+  }
+}
+```
+
+**Response (200 OK):**
+```json
+{
+  "response": "string",
+  "sources": ["string"],
+  "confidence": "number"
+}
+```
+
+### Assessments
+
+#### GET /assessments/{assessmentId}
+Retrieve a specific assessment.
+
+**Response (200 OK):**
+```json
+{
+  "assessmentId": "string",
+  "title": "string",
+  "type": "quiz|exercise|project",
+  "questions": [
+    {
+      "questionId": "string",
+      "question": "string",
+      "type": "multiple-choice|short-answer|coding",
+      "options": ["string"],
+      "correctAnswer": "string"
+    }
+  ],
+  "difficulty": "easy|medium|hard",
+  "expectedTime": "number"
+}
+```
+
+#### POST /assessments/{assessmentId}/submit
+Submit answers for an assessment.
+
+**Request:**
+```json
+{
+  "answers": [
+    {
+      "questionId": "string",
+      "answer": "string"
+    }
+  ]
+}
+```
+
+**Response (200 OK):**
+```json
+{
+  "score": "number",
+  "maxScore": "number",
+  "passed": "boolean",
+  "feedback": [
+    {
+      "questionId": "string",
+      "correct": "boolean",
+      "explanation": "string"
+    }
+  ]
+}
+```
+
+## Error Responses
+
+All error responses follow this structure:
+```json
+{
+  "error": {
+    "code": "string",
+    "message": "string",
+    "details": "object"
+  }
+}
+```
+
+### Common Error Codes
+- `400`: Bad Request - Invalid request parameters
+- `401`: Unauthorized - Authentication required
+- `403`: Forbidden - Insufficient permissions
+- `404`: Not Found - Resource does not exist
+- `500`: Internal Server Error - Server error occurred
