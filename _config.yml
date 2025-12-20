@@ -1,0 +1,22 @@
+# Jekyll configuration for GitHub Pages
+title: Physical Humanoid Robotics
+email: your-email@example.com
+description: Documentation for Physical Humanoid Robotics project
+baseurl: ""
+url: "https://malaika-siddiq.github.io/physical-humanoid-robotic"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
