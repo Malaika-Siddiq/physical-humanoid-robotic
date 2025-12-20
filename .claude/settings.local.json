@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp Physical_AI_and_Humaoid_Robotics/sidebars.ts .)",
+      "Bash(cp Physical_AI_and_Humaoid_Robotics/.gitignore .)",
+      "Bash(git add .)"
+    ]
+  }
+}

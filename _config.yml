@@ -1,4 +1,7 @@
 # Jekyll configuration for GitHub Pages
+# This file exists to prevent GitHub Pages from trying to build with Jekyll
+# The actual site is built with Docusaurus
+
 title: Physical Humanoid Robotics
 email: your-email@example.com
 description: Documentation for Physical Humanoid Robotics project
@@ -13,10 +16,13 @@ plugins:
 
 # Exclude from processing
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  - node_modules/
+  - build/
+  - .docusaurus/
+  - package.json
+  - package-lock.json
+  - yarn.lock
+  - pnpm-lock.yaml
+  - dist/
+  - .next/
+  - out/

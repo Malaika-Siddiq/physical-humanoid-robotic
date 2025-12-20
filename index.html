@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Physical Humanoid Robotics</title>
+    <meta http-equiv="refresh" content="0; url=./docs/intro">
+    <title>Redirecting to Documentation...</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -12,98 +13,53 @@
             line-height: 1.6;
             color: #333;
             background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
 
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            text-align: center;
+            max-width: 600px;
             padding: 2rem;
             background-color: white;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             border-radius: 5px;
-            margin-top: 2rem;
         }
 
-        header {
-            text-align: center;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 2rem;
-            margin-bottom: 2rem;
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
         }
 
-        h1 {
-            color: #2c3e50;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 10px 0;
-        }
-
-        .btn:hover {
-            background-color: #2980b9;
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin: 2rem 0;
-        }
-
-        .feature-card {
-            border: 1px solid #eee;
-            border-radius: 5px;
-            padding: 1.5rem;
-            text-align: center;
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Physical Humanoid Robotics</h1>
-            <p>An advanced project combining AI and robotics for humanoid applications</p>
-        </header>
+        <h1>Physical Humanoid Robotics</h1>
+        <p>Documentation for AI-powered humanoid robotics development</p>
 
-        <section>
-            <h2>About This Project</h2>
-            <p>This repository contains comprehensive documentation and resources for developing physical humanoid robots with artificial intelligence capabilities.</p>
+        <div class="spinner"></div>
 
-            <div class="features">
-                <div class="feature-card">
-                    <h3>Documentation</h3>
-                    <p>Detailed guides and specifications for humanoid robot development.</p>
-                    <a href="/docs/intro" class="btn">View Docs</a>
-                </div>
-
-                <div class="feature-card">
-                    <h3>Implementation Guide</h3>
-                    <p>Step-by-step instructions for building humanoid robotic systems.</p>
-                    <a href="/implementation-guide.md" class="btn">Guide</a>
-                </div>
-
-                <div class="feature-card">
-                    <h3>Research Papers</h3>
-                    <p>Academic papers and technical documentation.</p>
-                    <a href="/Physical_AI_and_Humaoid_Robotics/" class="btn">Papers</a>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Quick Start</h2>
-            <ol>
-                <li>Explore the <a href="/docs/">documentation</a> for setup instructions</li>
-                <li>Review the <a href="/implementation-guide.md">implementation guide</a> for detailed procedures</li>
-                <li>Check out the <a href="/Physical_AI_and_Humaoid_Robotics/">research materials</a> for technical insights</li>
-            </ol>
-        </section>
+        <p>Redirecting to documentation...</p>
+        <p><a href="./docs/intro">Click here if you are not redirected automatically</a></p>
     </div>
+
+    <script>
+        // Additional JavaScript redirect as a fallback
+        setTimeout(function() {
+            window.location.href = "./docs/intro";
+        }, 1000);
+    </script>
 </body>
 </html>
