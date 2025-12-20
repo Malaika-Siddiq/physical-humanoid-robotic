@@ -1,8 +1,8 @@
 {
-  "label": "Chapter 3: Manipulation and Dexterity",
+  "label": "Chapter 3: Module 3 – Robot Simulation & Digital Twins (Gazebo & Unity)",
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "Principles of manipulation, dexterity, and force control in humanoid robots."
+    "description": "Simulation Fundamentals, Gazebo for Robotics, and Unity for Visualization."
   }
 }

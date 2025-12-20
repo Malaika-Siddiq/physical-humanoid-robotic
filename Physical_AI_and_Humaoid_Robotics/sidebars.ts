@@ -197,7 +197,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Chapter 2: Locomotion and Balance',
+      label: 'Chapter 2: The Robotic Nervous System (ROS 2)',
       items: [
         'chapter-02/lesson-1/lesson-1',
         'chapter-02/lesson-2/lesson-2',
@@ -210,7 +210,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Chapter 3: Manipulation and Dexterity',
+      label: 'Chapter 3: Robot Simulation & Digital Twins (Gazebo & Unity)',
       items: [
         'chapter-03/lesson-1/lesson-1',
         'chapter-03/lesson-2/lesson-2',
@@ -223,7 +223,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Chapter 4: Artificial Intelligence and Machine Learning',
+      label: 'Chapter 4:  AI Robot Brain with NVIDIA Isaac',
       items: [
         'chapter-04/lesson-1/lesson-1',
         'chapter-04/lesson-2/lesson-2',
@@ -236,7 +236,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Chapter 5: Cognitive Architectures',
+      label: 'Chapter 5:  Vision-Language-Action (VLA) Systems',
       items: [
         'chapter-05/lesson-1/lesson-1',
         'chapter-05/lesson-2/lesson-2',
@@ -249,7 +249,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Chapter 6: Human-Robot Interaction',
+      label: 'Chapter 6:  Humanoid Robot Design & Interaction',
       items: [
         'chapter-06/lesson-1/lesson-1',
         'chapter-06/lesson-2/lesson-2',
@@ -262,7 +262,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Chapter 7: Social Robotics',
+      label: 'Chapter 7:  Conversational Robotics & Capstone Project',
       items: [
         'chapter-07/lesson-1/lesson-1',
         'chapter-07/lesson-2/lesson-2',
@@ -273,71 +273,8 @@ const sidebars: SidebarsConfig = {
         id: 'chapter-07/lesson-1/lesson-1'
       }
     },
-    {
-      type: 'category',
-      label: 'Chapter 8: Ethics and Safety',
-      items: [
-        'chapter-08/lesson-1/lesson-1',
-        'chapter-08/lesson-2/lesson-2',
-        'chapter-08/lesson-3/lesson-3'
-      ],
-      link: {
-        type: 'doc',
-        id: 'chapter-08/lesson-1/lesson-1'
-      }
-    },
-    {
-      type: 'category',
-      label: 'Chapter 9: Applications and Use Cases',
-      items: [
-        'chapter-09/lesson-1/lesson-1',
-        'chapter-09/lesson-2/lesson-2',
-        'chapter-09/lesson-3/lesson-3'
-      ],
-      link: {
-        type: 'doc',
-        id: 'chapter-09/lesson-1/lesson-1'
-      }
-    },
-    {
-      type: 'category',
-      label: 'Chapter 10: Hardware Platforms and Technologies',
-      items: [
-        'chapter-10/lesson-1/lesson-1',
-        'chapter-10/lesson-2/lesson-2',
-        'chapter-10/lesson-3/lesson-3'
-      ],
-      link: {
-        type: 'doc',
-        id: 'chapter-10/lesson-1/lesson-1'
-      }
-    },
-    {
-      type: 'category',
-      label: 'Chapter 11: Simulation and Development Tools',
-      items: [
-        'chapter-11/lesson-1/lesson-1',
-        'chapter-11/lesson-2/lesson-2',
-        'chapter-11/lesson-3/lesson-3'
-      ],
-      link: {
-        type: 'doc',
-        id: 'chapter-11/lesson-1/lesson-1'
-      }
-    },
-    {
-      type: 'category',
-      label: 'Chapter 12: Future Directions and Research Frontiers',
-      items: [
-        'chapter-12/lesson-1/lesson-1',
-        'chapter-12/lesson-2/lesson-2',
-        'chapter-12/lesson-3/lesson-3'
-      ],
-      link: {
-        type: 'doc',
-        id: 'chapter-12/lesson-1/lesson-1'
-      }
-    }
+  
+  
   ]
 };
 
